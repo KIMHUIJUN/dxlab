@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="form-signin text-center" style="margin-top:50px;">
+    <form>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-pink"><font style="font-size:250%; vertical-align: inherit;font-family:Splash;">Insight</font></a></li></ul>
+        <h1 class="h3 mb-3 fw-normal">로그인</h1>
+
+        <div class="form-floating" style="margin:0 auto; width:400px;" >
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">이메일</label>
+        </div>
+        <div class="form-floating" style="margin:0 auto; width:400px;">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">비밀번호</label>
+        </div>
+        <div class="checkbox mb-3" style="padding-top:20px;">
+            <label>
+                <input type="checkbox" value="remember-me"> 아이디 저장
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary" type="submit" style="margin:0 auto; width:400px;">로그인</button>
+    </form>
+</main>
+{% endblock %}
+
