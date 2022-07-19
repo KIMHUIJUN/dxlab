@@ -67,18 +67,27 @@
                             <option>여자</option>
                         </select>
                     </div>
-
-                <div class="form-group"style="margin:0 auto; width:503px;" >
-                    <label class="form-label mt-4" for="exampleInputEmail1" >경력</label>
-                    <input  type="text" class="form-control" id="경력" value="년" >
-                </div>
                  <div class="bir_wrap"style="margin:0 auto; width:503px;">
-                        <label class="form-label mt-4" >원하는 직군</label>
-                    <div class="form-check"style="width:160px;">
-                        <input class="form-check-input" type="radio" name="flexRadioDeFault" id="프론트엔드">
+                        <label class="form-label mt-4" >관심 분야</label>
+                    <div class="form-check"style="width:160px; display:table-cell;">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDeFault" id="프론트엔드">
                         <label class="form-check-label" for="프론트엔드">프론트엔드</label>
-                        <span class="ps_box focus"  >
-                            <select class="form-select" id="원하는 직군" >
+
+                    </div>
+
+                     <div class="form-check"style="width:160px; display:table-cell;">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDeFault" id="벡엔드">
+                        <label class="form-check-label" for="벡엔드">백엔드</label>
+                    </div>
+                     <div class="form-check"style="width:160px; display:table-cell;">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDeFault" id="데이터분석">
+                        <label class="form-check-label" for="데이터분석">데이터분석</label>
+                    </div>
+                 </div>
+                <div class="bir_wrap" style="margin:0 auto; width:503px; padding-top:20px;">
+                    <label class="label" >프론트엔드</label>
+                    <span class="ps_box focus" style="display:inline-block; width:428px; padding-left:20px;">
+                            <select class="form-select"  id="경력" >
                                 <option>무경험</option>
                                 <option>1~2년</option>
                                 <option>3~5년</option>
@@ -86,19 +95,35 @@
                             </select>
 
                         </span>
-                    </div>
-                     <div class="form-check"style="width:160px;">
-                        <input class="form-check-input" type="radio" name="flexRadioDeFault" id="벡엔드">
-                        <label class="form-check-label" for="벡엔드">백엔드</label>
-                    </div>
-                     <div class="form-check"style="width:160px;">
-                        <input class="form-check-input" type="radio" name="flexRadioDeFault" id="데이터분석">
-                        <label class="form-check-label" for="데이터분석">데이터분석</label>
-                    </div>
-                 </div>
+                </div>
+                <div class="bir_wrap" style="margin:0 auto; width:503px; padding-top:20px;">
+                    <label class="label" >백엔드</label>
+                    <span class="ps_box focus" style="display:inline-block; width:456px; padding-left:19px;">
+                            <select class="form-select"  id="경력1" >
+                                <option>무경험</option>
+                                <option>1~2년</option>
+                                <option>3~5년</option>
+                                <option>5년 이상</option>
+                            </select>
+
+                        </span>
+                </div>
+                <div class="bir_wrap" style="margin:0 auto; width:503px; padding-top:20px;">
+                    <label class="label" >데이터분석</label>
+                    <span class="ps_box focus" style="display:inline-block; width:428px; padding-left:19px;">
+                            <select class="form-select"  id="경력2" >
+                                <option>무경험</option>
+                                <option>1~2년</option>
+                                <option>3~5년</option>
+                                <option>5년 이상</option>
+                            </select>
+
+                        </span>
+                </div>
                         <div class="d-grid gap-2" style="padding-top: 30px; margin:0 auto; width:503px;">
                     <button class="btn btn-primary btn-lg" type="button">가입하기</button>
                 </div>
+
             </form>
         </div>
     </section>
