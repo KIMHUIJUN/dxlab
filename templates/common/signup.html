@@ -2,41 +2,40 @@
 {% block content %}
 <main>
     <section class="bg" >
-        <div class="container"style=" height: 1053px; padding-top:55px; padding-bottom:75px; margin-top:50px;">
-            <div class="row align-items-center justify-content-between">
-                <a class="navbar-brand h1 text-center" href="index.do">
+        <div class="container"style=" height: 100%; padding-bottom:8%; margin-top:4%;">
+            <div class="row align-items-center justify-content-between text-center">
+
                     <span class="text-dark h4">회원가입</span>
-                </a>
+
             </div>
             <form>
-                <div class="form-group"style="margin:0 auto; width:503px;">
+                <div class="form-group">
                         <label for="exampleInputEmail2" class="form-label mt-4">이름</label>
                     <input type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
                 </div>
-                <div class="form-group"style="margin:0 auto; width:503px;" >
+                <div class="form-group">
                     <label class="form-label mt-4" for="exampleInputEmail1" >아이디</label>
                     <input  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                 </div>
-                    <div class="form-group has-success"style="margin:0 auto; width:503px;">
+                    <div class="form-group has-success">
                         <label class="form-label mt-4" for="inputValid">비밀번호</label>
                         <input type="password" class="form-control is-vaild" id="inputValid">
                         <div class="valid-feedback"></div>
                     </div>
-                    <div class="form-group has-danger"style="margin:0 auto; width:503px;">
+                    <div class="form-group has-danger">
                         <label class="form-label mt-4" for="inputInvalid">비밀번호 재확인</label>
                         <input type="password" class="form-control is-invalid" id="inputInvalid">
                         <div class="invalid-feedback">비밀번호가 일치하지 않습니다</div>
                     </div>
 
-                <div class="bir_wrap"style="margin:0 auto; width:503px;">
+                <div class="bir_wrap">
                     <label class="form-label mt-4" >생년월일</label>
-                    <div class="bir_yy"style="width:160px; display:table-cell;">
+                    </div>
+                    <div class="bir_yy"style="margin:0 auto; width:45%" >
                         <span class="ps_box">
                             <input type="text" class="form-control" id="yy" placeholder="년(4자)" maxlength="4">
                         </span>
-                    </div>
-                    <div class="bir_mm"style="width:160px; display:table-cell; padding-left:10px;">
-                        <span class="ps_box focus">
+                        <span class="ps_box focuses">
                             <select class="form-select" id="mm" id="exampleSelect1">
                                 <option>월</option>
                                 <option>1</option>
@@ -53,40 +52,22 @@
                                 <option>12</option>
                             </select>
                         </span>
-                    </div>
-                    <div class="bir_dd"style="width:160px; display:table-cell; padding-left:10px;">
                         <span class="ps_box">
                             <input type="text" class="form-control" id="dd" placeholder="일" maxlength="2">
-                        </span>
-                    </div>
+                    </span>
+
                 </div>
-                    <div class="form-group" style="margin:0 auto; width:503px;">
+                    <div class="form-group">
                         <label for="exampleSelect2" class="form-label mt-4">성별</label>
                         <select class="form-select" id="exampleSelect2">
                             <option>남자</option>
                             <option>여자</option>
                         </select>
                     </div>
-                 <div class="bir_wrap"style="margin:0 auto; width:503px;">
-                        <label class="form-label mt-4" >관심 분야</label>
-                    <div class="form-check"style="width:160px; display:table-cell;">
-                        <input class="form-check-input" type="checkbox" name="flexRadioDeFault" id="프론트엔드">
-                        <label class="form-check-label" for="프론트엔드">프론트엔드</label>
 
-                    </div>
-
-                     <div class="form-check"style="width:160px; display:table-cell;">
-                        <input class="form-check-input" type="checkbox" name="flexRadioDeFault" id="벡엔드">
-                        <label class="form-check-label" for="벡엔드">백엔드</label>
-                    </div>
-                     <div class="form-check"style="width:160px; display:table-cell;">
-                        <input class="form-check-input" type="checkbox" name="flexRadioDeFault" id="데이터분석">
-                        <label class="form-check-label" for="데이터분석">데이터분석</label>
-                    </div>
-                 </div>
-                <div class="bir_wrap" style="margin:0 auto; width:503px; padding-top:20px;">
+                <div class="wrap" >
                     <label class="label" >프론트엔드</label>
-                    <span class="ps_box focus" style="display:inline-block; width:428px; padding-left:20px;">
+                    <span class="ps_boxs">
                             <select class="form-select"  id="경력" >
                                 <option>무경험</option>
                                 <option>1~2년</option>
@@ -96,9 +77,9 @@
 
                         </span>
                 </div>
-                <div class="bir_wrap" style="margin:0 auto; width:503px; padding-top:20px;">
+                <div class="wrap">
                     <label class="label" >백엔드</label>
-                    <span class="ps_box focus" style="display:inline-block; width:455px; padding-left:47px;">
+                    <span class="ps_boxs">
                             <select class="form-select"  id="경력1" >
                                 <option>무경험</option>
                                 <option>1~2년</option>
@@ -108,9 +89,9 @@
 
                         </span>
                 </div>
-                <div class="bir_wrap" style="margin:0 auto; width:503px; padding-top:20px;">
+                <div class="wrap" >
                     <label class="label" >데이터분석</label>
-                    <span class="ps_box focus" style="display:inline-block; width:428px; padding-left:19px;">
+                    <span class="ps_boxs">
                             <select class="form-select"  id="경력2" >
                                 <option>무경험</option>
                                 <option>1~2년</option>
@@ -120,7 +101,28 @@
 
                         </span>
                 </div>
-                        <div class="d-grid gap-2" style="padding-top: 30px; margin:0 auto; width:503px;">
+
+                <div class="bir_wrap">
+                        <label class="form-label mt-4" >관심 분야</label>
+                 </div>
+                    <div class="bir_wrap">
+                   <div class="form-check"style="float:left;">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDeFault" id="프론트엔드">
+                        <label class="form-check-label" for="프론트엔드">프론트엔드</label>
+
+                    </div>
+
+                     <div class="form-check" style="margin-left:10%;">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDeFault" id="벡엔드">
+                        <label class="form-check-label" for="벡엔드">백엔드</label>
+                    </div>
+                     <div class="form-check"style="float:right;">
+                        <input class="form-check-input" type="checkbox" name="flexRadioDeFault" id="데이터분석">
+                        <label class="form-check-label" for="데이터분석">데이터분석</label>
+                    </div>
+                </div>
+
+                        <div class="d-grid gap-2" style="padding-top: 2%; margin:0 auto; width:43%;">
                     <button class="btn btn-primary btn-lg" type="button">가입하기</button>
                 </div>
 

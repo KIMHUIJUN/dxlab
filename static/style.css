@@ -1,0 +1,67 @@
+.form-group {
+    margin:0 auto;
+    width: 43%;
+}
+@media (max-width: 60%){
+    .form-group{
+    margin:0 auto;
+    width: 60%;
+    }
+}
+.bir_wrap{
+    margin:0 auto;
+    width:43%
+}
+.ps_box {
+    display:inline-block;
+    width:30%;
+    margin-left:2%;
+
+}
+@media (max-width: 60%){
+    .ps_box{
+    display:inline-block;
+    width:30%;
+    margin-left:2%;
+    }
+}
+.form-label{
+    font-weight:bold;
+
+}
+.label{
+    font-weight:bold;
+}
+.form-check{
+
+    width:30%;
+    display:inline-block;
+
+}
+.form-check-input{
+    width:15px;
+}
+.form-check-label{
+    width:5%;
+    display:table-cell;
+}
+.wrap{
+    padding-top:2%;
+    margin:0 auto;
+    width:43%
+}
+
+.ps_boxs {
+    display:inline-block;
+    width:82%;
+    float:right;
+    margin-left:2%;
+
+}
+@media (max-width: 50%){
+    .ps_boxs{
+    display:inline-block;
+    width:84%;
+    margin-left:2%;
+    }
+}
