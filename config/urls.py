@@ -15,12 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path ,include
+<<<<<<< HEAD
 from django.conf.urls.static import static
 from django.conf import settings
+=======
+from insight import views
+
+>>>>>>> 4762db6b60510278eaa0fc1d6f998a8dae6a4239
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('insight/', include('insight.urls')),
     path('common/', include('common.urls')),
+    path('', views.index, name='index'),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

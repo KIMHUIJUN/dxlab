@@ -8,6 +8,7 @@
                     <span class="text-dark h4">회원가입</span>
 
             </div>
+<<<<<<< HEAD
             <form>
                 <div class="form-group">
                         <label for="exampleInputEmail2" class="form-label mt-4">이름</label>
@@ -32,10 +33,45 @@
                     <label class="form-label mt-4" >생년월일</label>
                     </div>
                     <div class="bir_yy"style="margin:0 auto; width:45%" >
+=======
+              <form method="post" action="{% url 'common:signup' %}">
+                {% csrf_token %}
+                {% include "form_errors.html" %}
+
+                <div class="form-group"style="margin:0 auto; width:503px;">
+                    <label for="email" class="form-label mt-4" >이메일</label>
+                   <input type="email" id="email" name="email" class="form-control" required autofocus />
+                </div>
+
+                <div class="form-group has-success"style="margin:0 auto; width:503px;">
+                        <label class="form-label mt-4" for="password">비밀번호</label>
+                        <input type="password" class="form-control" name="password1" id="password" required>
+                        <div class="valid-feedback"></div>
+                </div>
+
+                <div class="form-group has-danger"style="margin:0 auto; width:503px;">
+                        <label class="form-label mt-4" for="password2">비밀번호 재확인</label>
+                        <input type="password" class="form-control" id="password2" name="password2" required>
+<!--                        <div class="invalid-feedback">비밀번호가 일치하지 않습니다</div>-->
+                </div>
+
+                <div class="bir_wrap"style="margin:0 auto; width:503px;">
+
+                    <label class="form-label mt-4" >생년월일</label>
+
+                    <div class="bir_yy"style="width:160px; display:table-cell;">
+>>>>>>> 4762db6b60510278eaa0fc1d6f998a8dae6a4239
                         <span class="ps_box">
-                            <input type="text" class="form-control" id="yy" placeholder="년(4자)" maxlength="4">
+                            <input type="text" class="form-control" id="age" name="date_of_birth" placeholder="년(4자)" maxlength="50" required >
                         </span>
+<<<<<<< HEAD
                         <span class="ps_box focuses">
+=======
+                    </div>
+
+                    <div class="bir_mm"style="width:160px; display:table-cell; padding-left:10px;">
+                        <span class="ps_box focus">
+>>>>>>> 4762db6b60510278eaa0fc1d6f998a8dae6a4239
                             <select class="form-select" id="mm" id="exampleSelect1">
                                 <option>월</option>
                                 <option>1</option>
@@ -52,6 +88,7 @@
                                 <option>12</option>
                             </select>
                         </span>
+<<<<<<< HEAD
                         <span class="ps_box">
                             <input type="text" class="form-control" id="dd" placeholder="일" maxlength="2">
                     </span>
@@ -73,10 +110,55 @@
                                 <option>1~2년</option>
                                 <option>3~5년</option>
                                 <option>5년 이상</option>
+=======
+                    </div>
+
+                    <div class="bir_dd"style="width:160px; display:table-cell; padding-left:10px;">
+                        <span class="ps_box">
+                            <input type="text" class="form-control" id="dd" placeholder="일" maxlength="2">
+                        </span>
+                    </div>
+
+                </div>
+                    <div class="form-group" style="margin:0 auto; width:503px;">
+                        <label for="sex" class="form-label mt-4">성별</label>
+                        <select class="form-select" id="sex" name="sex" >
+                            <option value="남자">남자</option>
+                            <option value="여자   ">여자</option>
+                        </select>
+                    </div>
+                 <div class="bir_wrap"style="margin:0 auto; width:503px;">
+                        <label class="form-label mt-4" >관심 분야</label>
+                    <div class="form-check"style="width:160px; display:table-cell;">
+                        <input class="form-check-input" type="checkbox" name="want_field" id="want_field" value="2">                      <label class="form-check-label" for="want_field">프론트엔드</label>
+
+                    </div>
+
+                     <div class="form-check"style="width:160px; display:table-cell;">
+                        <input class="form-check-input" type="checkbox" name="want_field" id="벡엔드" value="4">
+                        <label class="form-check-label" for="벡엔드">백엔드</label>
+                    </div>
+
+                     <div class="form-check"style="width:160px; display:table-cell;">
+                        <input class="form-check-input" type="checkbox" name="want_field" id="데이터분석" value="8">
+                        <label class="form-check-label" for="데이터분석">데이터분석</label>
+                    </div>
+
+                 </div>
+                <div class="bir_wrap" style="margin:0 auto; width:503px; padding-top:20px;">
+                    <label class="label" >프론트엔드</label>
+                    <span class="ps_box focus" style="display:inline-block; width:428px; padding-left:20px;">
+                            <select class="form-select"  id="front_level" name="front_level"  value="{{ form.front_level.value|default_if_none:0}" >
+                                <option value=0>무경험</option>
+                                <option value=1>1~2년</option>
+                                <option value=2>3~5년</option>
+                                <option value=3>5년 이상</option>
+>>>>>>> 4762db6b60510278eaa0fc1d6f998a8dae6a4239
                             </select>
 
                         </span>
                 </div>
+<<<<<<< HEAD
                 <div class="wrap">
                     <label class="label" >백엔드</label>
                     <span class="ps_boxs">
@@ -85,22 +167,43 @@
                                 <option>1~2년</option>
                                 <option>3~5년</option>
                                 <option>5년 이상</option>
+=======
+
+                <div class="bir_wrap" style="margin:0 auto; width:503px; padding-top:20px;">
+                    <label class="label" >백엔드</label>
+                    <span class="ps_box focus" style="display:inline-block; width:456px; padding-left:19px;">
+                            <select class="form-select"  id="back_level" name="back_level" value="{{ form.back_level.value|default_if_none:0}}" >
+                                <option value=0>무경험</option>
+                                <option value=1>1~2년</option>
+                                <option value=2>3~5년</option>
+                                <option value=3>5년 이상</option>
+>>>>>>> 4762db6b60510278eaa0fc1d6f998a8dae6a4239
                             </select>
 
                         </span>
                 </div>
                 <div class="wrap" >
                     <label class="label" >데이터분석</label>
+<<<<<<< HEAD
                     <span class="ps_boxs">
                             <select class="form-select"  id="경력2" >
                                 <option>무경험</option>
                                 <option>1~2년</option>
                                 <option>3~5년</option>
                                 <option>5년 이상</option>
+=======
+                    <span class="ps_box focus" style="display:inline-block; width:428px; padding-left:19px;">
+                            <select class="form-select"  id="data_level" name="data_level" value="{{ form.data_level.value|default_if_none:0}}" >
+                                <option value=0>무경험</option>
+                                <option value=1>1~2년</option>
+                                <option value=2>3~5년</option>
+                                <option value=3>5년 이상</option>
+>>>>>>> 4762db6b60510278eaa0fc1d6f998a8dae6a4239
                             </select>
 
                         </span>
                 </div>
+<<<<<<< HEAD
 
                 <div class="bir_wrap">
                         <label class="form-label mt-4" >관심 분야</label>
@@ -124,6 +227,10 @@
 
                         <div class="d-grid gap-2" style="padding-top: 2%; margin:0 auto; width:43%;">
                     <button class="btn btn-primary btn-lg" type="button">가입하기</button>
+=======
+                        <div class="d-grid gap-2" style="padding-top: 30px; margin:0 auto; width:503px;">
+                    <button class="btn btn-primary btn-lg" type="submit">가입하기</button>
+>>>>>>> 4762db6b60510278eaa0fc1d6f998a8dae6a4239
                 </div>
 
             </form>
