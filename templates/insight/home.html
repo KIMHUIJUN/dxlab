@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block homeheader %}
+<header class="p-3 bg-secondary text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center md-mb-0">
+                <li><a href="{% url 'insight:index' %}" class="nav-link px-2 text-pink"><font style="font-size:250%;"><font style="font-family:Splash;"><font style="vertical-align: inherit;">Insight</font></font></font></a></li>
+                <li><a href="#" class="nav-link px-2 text-white" style="margin-top:25px;"><font style="font-size:150%;"><font style="margin-left: 20px;" >프론트엔드</font></font></a></li>
+                <li><a href="#" class="nav-link px-2 text-white" style="margin-top:25px;"><font style="font-size:150%;">백엔드</font></a></li>
+                <li><a href="#" class="nav-link px-2 text-white" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top:25px;"><font style="font-size:150%;">데이터 분석</font></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Ac</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul></li>
+            </ul>
+
+            <div class="text-end">
+              <a href ="{% url 'common:signin'%}"  type="button" class="btn btn-outline-light me-2" ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">로그인</font></font></a>
+              <a href = "{% url 'common:signup'%}" type="button" class="btn btn-warning"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">가입하기</font></font></a>
+            </div>
+        </div>
+    </div>
+  </header>
+{% endblock %}
+{% block content %}
+<main>
+    <div class="row bg-dark"  >
+    <div class="col-lg-4 text-white text-center"style="margin-top: 100px;">
+        <svg class="bd-placeholder-img rounded-circle" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal">프론트엔드</h2>
+        <p>~~~~~~~~</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+        <div class="col-lg-4 text-white text-center" style="margin-top: 100px; ">
+        <svg class="bd-placeholder-img rounded-circle" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal ">백엔드</h2>
+        <p>~~~~~~~~</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+        <div class="col-lg-4 text-white text-center" style="margin-top: 100px; ">
+        <svg class="bd-placeholder-img rounded-circle" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal">데이터분석</h2>
+        <p>~~~~~~~~</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+    </div>
+</main>
+{% endblock %}
