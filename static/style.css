@@ -35,14 +35,14 @@
 .form-check{
 
     width:30%;
-    display:inline-block;
+    display:table-cell;
 
 }
 .form-check-input{
     width:15px;
 }
 .form-check-label{
-    width:5%;
+    
     display:table-cell;
 }
 .wrap{
