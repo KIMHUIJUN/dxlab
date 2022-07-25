@@ -8,8 +8,8 @@ class UserCreationForm(UserCreationForm):
     email = forms.EmailField(max_length=254, help_text='Reqired.add a vailid email address')
     class Meta:
         model = User
-        fields = ('email', 'date_of_birth', 'sex', "want_field",
-                  'password1','password2', 'front_level', 'back_level','data_level', )
+        fields = ('email', 'date_of_birth', 'sex', 'want_field_front','want_field_back','want_field_data','want_field_ai',
+                  'password1','password2', 'front_level', 'back_level','data_level','ai_level', )
 
     def clean_email(self):
 

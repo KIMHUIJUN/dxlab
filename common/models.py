@@ -3,7 +3,7 @@ from django.contrib.auth.models import (BaseUserManager, AbstractBaseUser)
 
 
 class UserManager(BaseUserManager):
-    def create_user(self, email, date_of_birth ,sex,want_field,front_level,back_level,data_level,password=None,):
+    def create_user(self, email, date_of_birth ,sex,want_field_front,want_field_back,want_field_data,want_field_ai, front_level, back_level, data_level, ai_level,password=None,):
         if not email:
             raise ValueError('Users must have an email address')
 
@@ -11,10 +11,14 @@ class UserManager(BaseUserManager):
             email=self.normalize_email(email),
             date_of_birth=date_of_birth,
             sex =sex,
-            want_field= want_field,
+            want_field_front= want_field_front,
+            want_field_back=want_field_back,
+            want_field_data= want_field_data,
+            want_field_ai= want_field_ai,
             front_level=front_level,
             back_level=back_level,
             data_level = data_level,
+            ai_level = ai_level,
 
         )
 
@@ -22,16 +26,20 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, date_of_birth, password,sex,want_field,front_level,back_level,data_level):
+    def create_superuser(self, email, date_of_birth, password,sex,want_field_front,want_field_back,want_field_data, want_field_ai , front_level,back_level,data_level, ai_level,):
         user = self.create_user(
             email,
             password=password,
             date_of_birth=date_of_birth,
             sex=sex,
-            want_field=want_field,
+            want_field_front= want_field_front,
+            want_field_back=want_field_back,
+            want_field_data= want_field_data,
+            want_field_ai= want_field_ai,
             front_level=front_level,
             back_level=back_level,
-            data_level=data_level,
+            data_level = data_level,
+            ai_level = ai_level,
 
         )
         user.is_admin = True
@@ -47,17 +55,21 @@ class User(AbstractBaseUser):
     )
     date_of_birth = models.DateField()
     sex = models.TextField()
-    want_field = models.IntegerField()
+    want_field_front = models.BooleanField()
+    want_field_back = models.BooleanField()
+    want_field_data = models.BooleanField()
+    want_field_ai = models.BooleanField()
     front_level = models.IntegerField()
     back_level = models.IntegerField()
     data_level = models.IntegerField()
+    ai_level = models.IntegerField()
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
 
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['date_of_birth','sex','want_field','front_level','back_level',"data_level"]
+    REQUIRED_FIELDS = ['date_of_birth', 'sex', 'want_field_front', 'want_field_back', 'want_field_data', 'want_field_ai', 'front_level', 'back_level', "data_level" , 'ai_level']
 
     def __str__(self):
         return self.email
