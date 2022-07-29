@@ -9,3 +9,6 @@ def index(request):
     return render(request, 'insight/home.html', context)
 
 
+def detail(request):
+    context = {}
+    return render(request, 'insight/detailpage.html', context)
