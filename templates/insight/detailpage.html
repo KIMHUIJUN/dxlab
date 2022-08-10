@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+<section class="home_analytics_banner_area" style="background: -webkit-linear-gradient( rgba(88, 88, 999, 1) 50%, rgba(0, 0, 0, 0.09) 100%); height: 50vh; min-height: 650px;display:flex;">
+    <div class="container text-white text-center" style="margin-top:2%;"><font style="font-size:300%;">데이터분석</font>
+    </div>
+
+</section>
+    <section class="elementor" style="height:80vh; display:flex;">
+        <div class="container text-center" style="height:70vh; width:18%;  margin:auto;">
+            <h1 style="font-size:400%;">Level 1</h1>
+            <div class="container text-center" style="border:1px solid black; height:50vh; width:90%; margin:auto;">
+
+            </div>
+            {% if user.is_authenticated %}
+            <a class="btn btn-info" href="{%url 'insight:test'%}" style="margin-top:5%; width:43%; height:6%; font-size:150%;" type="button">go test</a>
+            {% endif%}
+            {% if not user.is_authenticated %}
+            <a class="btn btn-info" href="{% url 'common:signin' %} " style="margin-top:5%; width:43%; height:6%; font-size:150%;" type="button"> sigin please</a>
+
+            {% endif%}
+        </div>
+
+        <div class="container text-center" style="height:70vh; width:18%; margin:auto;">
+            <h1 style="font-size:400%;">Level 2</h1>
+            <div class="container text-center" style="border:1px solid black; height:50vh; width:90%; margin:auto;">
+
+            </div>
+            <a class="btn btn-info" href="#" style="margin-top:5%; width:43%; height:6%; font-size:150%;" type="button">go test</a>
+        </div>
+
+        <div class="container text-center" style="height:70vh; width:18%; margin:auto;">
+            <h1 style="font-size:400%;">Level 3</h1>
+            <div class="container text-center" style="border:1px solid black; height:50vh; width:90%; margin:auto;">
+
+            </div>
+            <a class="btn btn-info" href="#" style="margin-top:5%; width:43%; height:6%; font-size:150%;" type="button">go test</a>
+        </div>
+
+
+    </section>
+</main>
+{% endblock %}

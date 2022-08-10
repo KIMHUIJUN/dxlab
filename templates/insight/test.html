@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+    <section class="test" style="height:1080px; display:flex; background:#eee">
+        <div class="container text-center" style="background:#F5DA81; margin-top:2%; margin-bottom:2%;">
+            <label style="font-size:300%;">{{ question.id }}</label>
+            <div class="container bg-white" style="height:80%; width:75%;">
+                <pre style="font-size:150%;  margin-top:5%; margin-left:5%;">
+                    {{ question.content }}
+                </pre>
+                <div class="do">
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="want_field_back"  value="True">
+                        <label class="form-check-label ">{{ question.ex_1 }}</label>
+                        </div>
+                        <div class="form-check" >
+                        <input class="form-check-input" type="radio" name="want_field_back"  value="True">
+                        <label class="form-check-label ">{{ question.ex_2 }}</label>
+                        </div>
+                        <div class="form-check" >
+                        <input class="form-check-input" type="radio" name="want_field_back"  value="True">
+                        <label class="form-check-label ">{{ question.ex_3 }}</label>
+                        </div>
+                        <div class="form-check" >
+                        <input class="form-check-input" type="radio" name="want_field_back"  value="True">
+                        <label class="form-check-label ">{{ question.ex_4 }}</label>
+                        </div>
+                    </div>
+
+                <a class="btn btn-secondary" href="{% url 'insight:test' %} " type="button" style="margin-top:2%;">Next --></a>
+            </div>
+        </div>
+
+</section>
+</main>
+{% endblock %}

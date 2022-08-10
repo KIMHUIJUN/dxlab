@@ -6,4 +6,6 @@ app_name = "insight"
 
 urlpatterns = [
     path('', views.index, name = 'index'),
+    path('detailpage/', views.detailp, name = 'detailpage'),
+    path('test',views.test, name = 'test'),
 ]
