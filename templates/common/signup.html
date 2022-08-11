@@ -2,9 +2,10 @@
 {% block content %}
 <main>
     <section class="bg" >
-        <div class="container"style=" height: 100%; padding-bottom:8%; margin-top:4%;">
+        <div class="container"style=" height: 100%; padding-bottom:8%; margin-top:2%;">
             <div class="row align-items-center justify-content-between text-center">
-                    <span class="text-dark h4">회원가입</span>
+                <font style="font-size:300%; vertical-align: inherit;font-family:Splash; color:#080E66;">Insight</font>
+                <span class="text-dark h4" style="margin-top:1%;">회원가입</span>
             </div>
             <form method="post" action="{% url 'common:signup' %}">
                 {% csrf_token %}
@@ -111,7 +112,7 @@
                     </div>
                 </div>
                         <div class="d-grid gap-2" style="padding-top: 2%; margin:0 auto; width:43%;">
-                    <button class="btn btn-primary btn-lg" type="submit">가입하기</button>
+                    <button class="btn text-white btn-lg" style="background-color:#080E66;" type="submit">가입하기</button>
 
                 </div>
 
