@@ -14,17 +14,6 @@ def index(request):
     return render(request, 'insight/home.html', context)
 
 
-<<<<<<< HEAD
-def detail(request):
-    context = {}
-    return render(request, 'insight/detailpage.html', context)
-
-def test(request):
-    context = {}
-    return render(request, 'insight/test.html', context)
-=======
-
-
 def detailp(request):
     context = {}
 
@@ -54,10 +43,3 @@ def test(request):
 
 
 
-
-
-
-
-
-
->>>>>>> 8d2afae291b76b797b57cac3ee668f26e954357f
