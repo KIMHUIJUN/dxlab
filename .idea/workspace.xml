@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d549389-7d8a-44d5-b5c5-b0d8151268ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/insight/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/insight/detailpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/insight/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insight/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/insight/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/insight/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/insight/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insight/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/insight/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/insight/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insight/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/insight/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/insight/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/insight/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/insight/detailpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/insight/detailpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/insight/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/insight/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/insight/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/insight/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,7 +5,7 @@
         {% csrf_token %}
         {% include "form_errors.html" %}
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-pink"><font style="font-size:250%; vertical-align: inherit;font-family:Splash;">Insight</font></a></li></ul>
+            <li><a href="#" class="nav-link px-2"><font style="font-size:250%; vertical-align: inherit;font-family:Splash; color:#080E66;">Insight</font></a></li></ul>
         <h1 class="h3 mb-3 fw-normal">로그인</h1>
 
         <div class="form-floating" style="margin:0 auto; width:400px;" >
@@ -23,7 +23,7 @@
                 <input type="checkbox" value="remember-me"> 아이디 저장
             </label>
         </div>
-        <button class="btn btn-lg btn-primary" type="submit" style="margin:0 auto; width:400px;">로그인</button>
+        <button class="btn btn-lg text-white" type="submit" style="margin:0 auto; width:400px; margin-bottom:3%; background-color:#080E66;">로그인</button>
     </form>
 </main>
 {% endblock %}
