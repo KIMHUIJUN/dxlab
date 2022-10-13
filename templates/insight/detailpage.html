@@ -9,8 +9,12 @@
 
         <div class="container text-center" style="height:70vh; width:18%;  margin:auto; ">
             <h1 style="font-size:300%;">Level 1</h1>
-
-            <div class="container text-center" style="border:1px solid black; height:50vh; width:90%; margin:auto;">
+            <div class="container text-center" style="border:1px;-moz-box-shadow: 1px 1px 3px 2px #080E66; -webkit-box-shadow: 1px 1px 3px 2px #080E66; box-shadow: 1px 1px 3px 2px #080E66; height:20vh; width:90%; margin:auto;">
+                <br>
+                <br>
+                <h4>
+                    처음 시작하고자 실력을 향상하고 싶은 초심자들을 위한 코딩 테스트
+                </h4>
 
             </div>
 
@@ -24,19 +28,37 @@
 
         <div class="container text-center" style="height:70vh; width:18%; margin:auto;">
             <h1 style="font-size:300%;">Level 2</h1>
-        <div class="container text-center" style="border:1px solid black; height:50vh; width:90%; margin:auto;">
-
+        <div class="container text-center" style="border:1px;-moz-box-shadow: 1px 1px 3px 2px #080E66; -webkit-box-shadow: 1px 1px 3px 2px #080E66; box-shadow: 1px 1px 3px 2px #080E66; height:20vh; width:90%; margin:auto;">
+            <br>
+            <br>
+            <h4>
+                혼자서의 힘으로는 힘들지만 공부를 해서 코딩 테스트를 풀 수있는 사람들을 위한 코딩 테스트
+            </h4>
         </div>
-            <a class="btn text-white" href="#" style="margin-top:5%; width:43%; height:6%; font-size:150%; background-color:#080E66;" type="button">go test</a>
+           {% if user.is_authenticated %}
+            <a class="btn text-white" href="{%url 'insight:test'%}" style="margin-top:5%; width:43%; height:6%; font-size:150%; background-color:#080E66;" type="button">go test</a>
+            {% endif%}
+            {% if not user.is_authenticated %}
+            <a class="btn text-white" href="{% url 'common:signin' %} " style="margin-top:5%; width:43%; height:6%; font-size:150%; background-color:#080E66;" type="button"> sigin please</a>
+            {% endif%}
         </div>
 
         <div class="container text-center" style="height:70vh; width:18%; margin:auto;">
             <h1 style="font-size:300%;">Level 3</h1>
-        <div class="container text-center" style="border:1px solid black; height:50vh; width:90%; margin:auto;">
-
+        <div class="container text-center" style="border:1px;-moz-box-shadow: 1px 1px 3px 2px #080E66; -webkit-box-shadow: 1px 1px 3px 2px #080E66; box-shadow: 1px 1px 3px 2px #080E66; height:20vh; width:90%; margin:auto;">
+            <br>
+            <br>
+            <h4>
+                취업준비생이나 코딩 테스트를 막힘 없이 풀어낼 수 있는 사람들을 위한 코딩 테스트
+            </h4>
         </div>
-            <a class="btn text-white" href="#" style="margin-top:5%; width:43%; height:6%; font-size:150%; background-color:#080E66;" type="button">go test</a>
-
+            {% if user.is_authenticated %}
+            <a class="btn text-white" href="{%url 'insight:test'%}" style="margin-top:5%; width:43%; height:6%; font-size:150%; background-color:#080E66;" type="button">go test</a>
+            {% endif%}
+            {% if not user.is_authenticated %}
+            <a class="btn text-white" href="{% url 'common:signin' %} " style="margin-top:5%; width:43%; height:6%; font-size:150%; background-color:#080E66;" type="button"> sigin please</a>
+            {% endif%}
+        </div>
     </section>
 </main>
 {% endblock %}
