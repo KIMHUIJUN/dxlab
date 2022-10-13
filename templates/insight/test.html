@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <main>
-    <section class="test" style="height:1080px; display:flex; background:#eee">
+    <section class="form-test" style="height:1080px; display:flex; background:#eee">
         <div class="container text-center" style=" margin-top:6%; ">
             <div class="container bg-white" style="border-radius: 30px;-moz-box-shadow: 1px 1px 3px 2px #080E66; -webkit-box-shadow: 1px 1px 3px 2px #080E66; box-shadow: 1px 1px 3px 2px #080E66; height:80%; width:75%;">
             <label style="font-size:300%;">{{ question.subject }}</label>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
 
-                <button class="btn btn-secondary" href="{% url 'insight:test' %} " type="submit" style="margin-top:2%;">Next --></button>
+                <button class="btn text-white" href="{% url 'insight:test' %} " type="submit" style="margin-top:2%; background-color:#080E66; float:right;">Next --></button>
             </form>
             </div>
         </div>

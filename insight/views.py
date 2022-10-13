@@ -60,6 +60,12 @@ def test(request, *args, **kwargs):
         return render(request, 'insight/home.html', context)
 
     return render(request, 'insight/test.html', context)
+def end(request):
+    return render(request,'insight/end_page.html')
+def suggestion(request):
+    return render(request,'insight/suggestion_page.html')
+def test_page(request):
+    return render(request,'insight/test_page.html')
 
 
 

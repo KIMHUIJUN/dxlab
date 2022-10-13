@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+      <section class="container" style="weight:30vh; height:250vh;">
+            <div class="container bg-white" style="border-radius: 30px;-moz-box-shadow: 1px 1px 3px 2px #080E66; -webkit-box-shadow: 1px 1px 3px 2px #080E66; box-shadow: 1px 1px 3px 2px #080E66; height:95%; width:80%;">
+            <center><label style="font-size:300%;">문제</label></center>
+                <pre style="font-size:150%;  margin-top:5%; margin-left:3%;">{{ question.subject }}</pre>
+                 <form method="post" action="{% url 'insight:test' %}">
+                 {% csrf_token %}
+                {% include "form_errors.html" %}
+                <div class="do" required >
+                    <div class="container" style="margin-right:5%;">
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio"  id = 'user_answer' name = 'answer' value=1>
+                        <label class="form-check-label ">1.(38,0,0,0,0)</label>
+                        <input class="form-check-input" type="radio"  id = 'user_answer1' name = 'answer'  value=2>
+                        <label class="form-check-label ">2.[38,0,0,0,0]</label>
+                        <input class="form-check-input" type="radio"  id = 'user_answer2' name = 'answer'  value=3>
+                        <label class="form-check-label ">3.TypeError</label>
+                        <input class="form-check-input" type="radio"  id = 'user_answer3' name = 'answer'  value=4>
+                        <label class="form-check-label ">4.(38)</label>
+                         </div>
+                        </div>
+                    </div>
+                <center><button class="btn text-white" href="{% url 'insight:test' %} " type="submit" style="margin-top:5%;background-color:#080E66;">Next</button></center>
+            </form>
+            </div>
+        </div>
+
+</section>
+</main>
+{% endblock %}
